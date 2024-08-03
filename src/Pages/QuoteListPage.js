@@ -2,8 +2,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getQuotes } from '../Services/api';
-import FloatingActionButton from '../components/FloatingActionButton';
-import QuoteCard from '../components/QuoteCard';
+import FloatingActionButton from '../Components/FloatingActionButton';
+import QuoteCard from '../Components/QuoteCard';
 import '../QuoteListPage.css'; // Import the CSS file
 
 const QuoteListPage = () => {
