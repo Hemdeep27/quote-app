@@ -1,0 +1,97 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.login-page,
+.quote-list-page,
+.quote-creation-page {
+  padding: 20px;
+}
+
+h2 {
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.fab:hover {
+  background-color: #0056b3;
+}
+
+.quote-card {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.quote-image {
+  position: relative;
+}
+
+.quote-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.quote-text-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.quote-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}

@@ -1,0 +1,48 @@
+/* src/Pages/QuoteListPage.css */
+
+.quote-list-page {
+  padding: 20px;
+}
+
+.logout-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+  margin-bottom: 20px;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+}
+
+.logout-button:hover {
+  background-color: #ff1a1a;
+}
+
+.quote-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.quote-grid .quote-card {
+  width: 100%;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}

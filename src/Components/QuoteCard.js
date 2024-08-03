@@ -1,15 +1,17 @@
+// src/components/QuoteCard.js
 import React from 'react';
+import '../QuoteCard.css'; // Assuming you have separate CSS for the quote card
 
 const QuoteCard = ({ quote }) => {
   return (
     <div className="quote-card">
-      <div className="quote-image">
-        <img src={quote.mediaUrl} alt="Quote" />
-        <div className="quote-text-overlay">{quote.text}</div>
-      </div>
-      <div className="quote-details">
-        <span>{quote.username}</span>
-        <span>{quote.created_at}</span>
+      <img src={quote.mediaUrl} alt="Quote Media" />
+      <div className="quote-card-content">
+        <p className="quote-card-text">{quote.text}</p>
+        <div className="quote-card-footer">
+          <span>{quote.username}</span>
+          <span>{new Date(quote.updatedAt).toLocaleDateString()}</span>
+        </div>
       </div>
     </div>
   );
